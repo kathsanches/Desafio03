@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlue"
-    tools:context=".view.activities.DetalheImagemActivity">
+    tools:context="com.example.marvel_app.view.activities.DetalheImagemActivity">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnVoltar"
+        android:id="@+id/btnRtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"

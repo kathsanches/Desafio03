@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlue"
-    tools:context=".view.activities.DetalheActivity">
+    tools:context="com.example.marvel_app.view.activities.DetalheActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
             app:srcCompat="@drawable/spiderman_splash" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
+            android:id="@+id/buttonReturn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
@@ -54,29 +54,31 @@
             app:srcCompat="@drawable/ic_back" />
 
         <TextView
-        android:id="@+id/txtTitulo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/titulo"
-        android:textColor="@color/colorWhite"
-        android:layout_margin="18dp"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textAllCaps="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgHQ" />
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/titulo"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgHQ" />
 
-    <TextView
-        android:id="@+id/txtDescricao"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/descricao"
-        android:textColor="@color/colorWhite"
-        android:layout_margin="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+        <TextView
+            android:id="@+id/txtDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/descricao"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
     <LinearLayout
         android:id="@+id/layout1"
@@ -93,17 +95,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/published"
             android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            android:text="Published:" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="15"
-            android:textColor="@color/colorWhite"
-            android:text="Data" />
+            android:fontFamily="sans-serif"
+            android:text="@string/data"
+            android:textColor="@color/colorWhite" />
     </LinearLayout>
 
     <LinearLayout
@@ -121,17 +125,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/price"
             android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            android:text="Price:" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtValor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="15"
-            android:textColor="@color/colorWhite"
-            android:text="Valor" />
+            android:fontFamily="sans-serif"
+            android:text="@string/valor"
+            android:textColor="@color/colorWhite" />
 
     </LinearLayout>
 
@@ -151,7 +157,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Pages:"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/pages"
                 android:textColor="@color/colorWhite"
                 android:textStyle="bold" />
 
@@ -160,7 +167,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="15"
-                android:text="Páginas"
+                android:fontFamily="sans-serif"
+                android:text="@string/paginas"
                 android:textColor="@color/colorWhite" />
 
         </LinearLayout>
